@@ -4,7 +4,7 @@ const app = express();
 const port = 1234;
 
 // 設定靜態檔案資料夾，讓 express 提供 fullmotion 資料夾內的所有內容
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // 設置根路徑對應 index.html
 app.get('/', (req, res) => {
