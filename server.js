@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = 1234;
+const port = 2234;
 
 // 設定靜態檔案資料夾，讓 express 提供 fullmotion 資料夾內的所有內容
 app.use(express.static(path.join(__dirname, 'public')));
